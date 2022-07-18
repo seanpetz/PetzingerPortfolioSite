@@ -34,7 +34,46 @@
 }
 
 
+.flex-container {
 
+  max-width: 800px;
+  display: flex;
+
+}
+
+.flex-container > div {
+
+  background-color: #f1f1f1;
+  font-size: 36px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.flex-container > div > ul {
+
+  font-size: 24px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.flex-container40 {
+
+  width: 40%;
+  padding: 20px;
+
+}
+
+.flex-container60 {
+
+  width: 60%;
+  padding: none;
+  background-image: url("//images.jewelers.services/ProductImages/webmarketing/IBS/EmailImages/0/637920869508936239_mens_rings_articleimage.jpg");
+  background-size: cover;
+  background-position: bottom center;
+  height: 300px;
+  width: 100%;
+
+}
 
 
 
