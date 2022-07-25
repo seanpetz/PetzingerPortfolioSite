@@ -11,48 +11,45 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Sean Petzinger Portfolio</title>
 </head>
 
 <body>
-    <div class="top-bar">
-        <div class="logo"><img src="/assets/PETZINGER.png"></div>
-        <div class="menu">
-            <ul>
-                <li><a href="/index.html">HOME</a></li>
-                <li><a href="/graphicdesigner.html">GRAPHIC DESIGNER</a></li>
-                <li><a href="/developer.html">DEVELOPER</a></li>
-            </ul>
+    <div class="logo2"><a href="/index.html"><img src="/assets/PETZINGER.png"></a>
+        <div class="topnav" id="myTopnav">
+            <a href="/index.html">Home</a>
+            <a href="/graphicdesigner.html">Graphic Designer</a>
+            <a href="/developer.html" class="active">Developer</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i></a>
         </div>
     </div>
     <div class="bannerDevelop">
         <div class="banner-text">
             <div class="banner-text-items">
                 <h2>Developer</h2>
-                <p></p>
+                <p>My curiosity of how things work finally got the best of me and I started to learn to code.</p>
             </div>
         </div>
     </div>
+
+
     <div class="main-content">
-        <div class="main1">
+        <div class="main2">
             <img class="thumbnail" src="/assets/DSC_0095.JPG">
             <h2>WordPress</h2>
-            <p>With a Bachelor of Fine Arts Degree in Graphic Design from Northern Kentucky University, I spent the last
-                25 plus years designing eveything from printed collateral to displays to signage to websites.</p>
+            <p>Site designed using WordPress for <a href="https://bestofferhouse.com/" target="_blank">bestofferhouse.com</a></p>
         </div>
-        <div class="main1">
+        <div class="main2">
             <img class="thumbnail" src="/assets/DSC_0112.JPG">
             <h2>Shopify</h2>
-            <p>I've taken my knowledge of layout and design and taught myself over the years how to code websites and
-                other digital media. It started with designing emails and progressed into learning Wordpress and Shopify
-                platforms for website design. Now I'm applying that knowledge to code websites from the ground up.</p>
+            <p>Online store for the <a href="https://ibgoodman.com/" target="_blank">IBGoodman Company</a> created with Shopify</p>
         </div>
-        <div class="main1">
+        <div class="main2">
             <img class="thumbnail" src="/assets/DSC_0226.JPG">
             <h2>codeKY</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo libero, sed delectus nam mollitia
-                quibusdam veritatis cupiditate deserunt quae autem aliquam magnam et necessitatibus maxime praesentium a
-                esse pariatur nisi.</p>
+            <p>Well actually... you're looking at it. This website was created as an assignment for <a href="https://codekentucky.org/" target="_blank">codeKY</a></p>
         </div>
     </div>
     <!--<div class="contact">
@@ -68,6 +65,12 @@
         </div>
     </div>
     </div>-->
+
+    <footer>
+        <div>
+            <p>&copy; Copyright 2022 Sean Petzinger</p>
+        </div>
+    </footer>
     <script src="script.js"></script>
 
 </body>

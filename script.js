@@ -1,57 +1,31 @@
-// Lightbox //
-
-let slideIndex = 1;
-showSlide(slideIndex);
-
-// You are providing the functionality for your clickable content, which is 
-// your previews, dots, controls and the close button.
-
-function openLightbox() {
-  document.getElementById('Lightbox').style.display = 'block';
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
 }
 
-function closeLightbox() {
-  document.getElementById('Lightbox').style.display = 'none';
-};
 
-// Note that you are assigning new values here to our slidIndex.
+const lightbox = document.createElement('div')
+lightbox.id = 'lightbox'
+document.body.appendChild(lightbox)
 
-function changeSlide(n) {
-  showSlide(slideIndex += n);
-};
+const images = document.querySelectorAll('img')
+images.forEach(image => {
+  image.addEventListener('click', e => {
+    lightbox.classList.add('active')
+    const img = document.createElement('img')
+    img.src = image.src
+    while (lightbox.firstChild) {
+      lightbox.removeChild(lightbox.firstChild)
+    }
+    lightbox.appendChild(img)
+  })
+})
 
-function toSlide(n) {
-  showSlide(slideIndex = n);
-};
-
-// This is your logic for the light box. It will decide which slide to show 
-// and which dot is active.
-
-function showSlide(n) {
-  const slides = document.getElementsByClassName('slide');
-  let modalPreviews = document.getElementsByClassName('modal-preview');
-
-  if (n > slides.length) {
-    slideIndex = 1;	
-  };
-  
-  if (n < 1) {
-    slideIndex = slides.length;
-  };
-
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  };
-  
-  for (let i = 0; i < modalPreviews.length; i++) {
-    modalPreviews[i].className = modalPreviews[i].className.replace(' active', '');
-  };
-  
-  slides[slideIndex - 1].style.display = 'block';
-  modalPreviews[slideIndex - 1].className += ' active';
-};
-
-
-
-
-
+lightbox.addEventListener('click', e => {
+  if (e.target !== e.currentTarget) return
+  lightbox.classList.remove('active')
+})

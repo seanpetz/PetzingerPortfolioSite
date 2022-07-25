@@ -11,26 +11,25 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Sean Petzinger Portfolio</title>
 </head>
 
 <body>
-    <div class="top-bar">
-        <div class="logo"><img src="/assets/PETZINGER.png"></div>
-        <div class="menu">
-            <ul>
-                <li><a href="/index.html">HOME</a></li>
-                <li><a href="/graphicdesigner.html">GRAPHIC DESIGNER</a></li>
-                <li><a href="/developer.html">DEVELOPER</a></li>
-            </ul>
+    <div class="logo2"><a href="/index.html"><img src="/assets/PETZINGER.png"></a>
+        <div class="topnav" id="myTopnav">
+            <a href="/index.html">Home</a>
+            <a href="/graphicdesigner.html" class="active">Graphic Designer</a>
+            <a href="/developer.html">Developer</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i></a>
         </div>
     </div>
     <div class="bannerDesign">
         <div class="banner-text">
             <div class="banner-text-items">
                 <h2>Graphic Designer</h2>
-                <p>I spent most of my career as a Graphic Designer. But I've always had an interest in programming. The
-                    two paths often cross and being fluent in both seemed like a reasonable goal.</p>
+                <p>With a Bachelor of Fine Arts degree in Graphic Designer, I've spent the last 25+ years making things as visually interesting as possible.</p>
             </div>
         </div>
     </div>
@@ -67,50 +66,17 @@
 
     <!--Lightbox-->
 
-    <div class="row">
-        <div class="col">
-            <img src="https://static.pexels.com/photos/385997/pexels-photo-385997.jpeg"
-                onclick="openLightbox();toSlide(1)" class="hover-shadow preview" alt="Toy car on the road." />
-        </div>
-        <div class="col">
-            <img src="https://static.pexels.com/photos/574521/pexels-photo-574521.jpeg"
-                onclick="openLightbox();toSlide(2)" class="hover-shadow preview" alt="Toy car exploring offroad." />
-        </div>
-        <div class="col">
-            <img src="https://static.pexels.com/photos/386009/pexels-photo-386009.jpeg"
-                onclick="openLightbox();toSlide(3)" class="hover-shadow preview" alt="Toy car in the city." />
-        </div>
+    <div class="grid">
+        <img src="https://source.unsplash.com/400x400?mountain">
+        <img src="https://source.unsplash.com/400x400?nature">
+        <img src="https://source.unsplash.com/400x400?valley">
+        <img src="https://source.unsplash.com/400x400?beach">
+        <img src="https://source.unsplash.com/400x400?ocean">
+        <img src="https://source.unsplash.com/400x400?water">
+        <img src="https://source.unsplash.com/400x400?trees">
+        <img src="https://source.unsplash.com/400x400?lake">
+        <img src="https://source.unsplash.com/400x400?cliff">
     </div>
-
-    <div id="Lightbox" class="modal">
-        <span class="close pointer" onclick="closeLightbox()">&times;</span>
-        <div class="modal-content">
-          <div class="slide">
-              <img src="https://static.pexels.com/photos/385997/pexels-photo-385997.jpeg" class="image-slide" alt="Toy car on the road." />
-          </div>
-          <div class="slide">
-              <img src="https://static.pexels.com/photos/574521/pexels-photo-574521.jpeg" class="image-slide" alt="Toy car exploring offroad." />
-          </div>    
-          <div class="slide">
-              <img src="https://static.pexels.com/photos/386009/pexels-photo-386009.jpeg" class="image-slide" alt="Toy car in the city." />
-          </div>
-        
-          <a class="previous" onclick="changeSlide(-1)">&#10094;</a>
-          <a class="next" onclick="changeSlide(1)">&#10095;</a>
-        
-          <div class="dots">
-            <div class="col">
-              <img src="https://static.pexels.com/photos/385997/pexels-photo-385997.jpeg" class="modal-preview hover-shadow" onclick="toSlide(1)" alt="Toy car on the road" />
-            </div>
-            <div class="col">
-              <img src="https://static.pexels.com/photos/574521/pexels-photo-574521.jpeg" class="modal-preview hover-shadow" onclick="toSlide(2)" alt="Toy car exploring offroad." />
-            </div>
-            <div class="col">
-              <img src="https://static.pexels.com/photos/386009/pexels-photo-386009.jpeg" class="modal-preview hover-shadow" onclick="toSlide(3)" alt="Toy car in the city." />
-            </div>
-          </div>
-        </div>
-      </div>
 
 
     <!--<div class="contact">
@@ -124,8 +90,16 @@
                 <a href="#">Submit</a>
             </div>
         </div>
-    </div>
     </div>-->
+
+
+
+    </div>
+    <footer>
+        <div>
+            <p>&copy; Copyright 2022 Sean Petzinger</p>
+        </div>
+    </footer>
     <script src="/script.js"></script>
 </body>
 
