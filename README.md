@@ -1,3 +1,13 @@
 # PetzingerPortfolioSite
 
-My project is a portfolio site for my two different possible career paths. Graphic Design and Developer. I used flexbox to organize content areas as well as an expanding and collapsing navbar for various media. The expanding and collapsing is made possible with two media queries. I have used javascript for my "Contact Me" page as well as for my lightbox portfolio. Originally I had intended to create a slideshow for the homepage but once I did I didn't care for the constant movement. I opted to do the lightbox as my javascript requirement instead.
+Sean Petzinger
+Web Development Course I – codeKY
+Summer 2022
+
+My project is a visually appealing portfolio site for my two possible career paths. Graphic Designer and Web Developer. 
+Open the index.html file to get started...
+•	I used media queries to adjust my layout based on size
+•	CSS Feature: Navigation menu that expands and collapses 
+•	CSS Feature: Flexbox organizes content based on media size
+•	Javascript Feature: Created a “Contact Me” form
+•	Javascript Feature: Created a lightbox on the “Graphic Designer” page using javascript
