@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="form.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -13,6 +14,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+
     <title>Sean Petzinger Portfolio</title>
 </head>
 
@@ -28,83 +30,86 @@
         </div>
     </div>
 
-    <div class="container">
-        <div class="form">
-          <div class="contact-info">
-            <h3 class="title">I'd love to hear from you!</h3>
-            <p class="text">
-              Have a question or coment? Send me a message and I'll get back to you as soon as possible.
-            </p>
+    <!--contact form-->
+
+    <!--<div class="contact-banner">
+        <h1>Contact Me</h1>
+    
+        <p class="contact-description">
+          Have a question or comment? Send me a message and I'll get back to you as soon as possible. 
+        </p>
+      </div>
   
-            <div class="info">
-              <div class="information">
-                <img src="/assets/location.png" class="icon" alt=""/>
-                <p>10297 Decoursey Pike<br/>Ryland Heights, KY 41015</p>
-              </div>
-              <div class="information">
-                <img src="/assets/email.png" class="icon" alt=""/>
-                <p>seanpetzinger@gmail.com</p>
-              </div>
-              <div class="information">
-                <img src="/assets/phone.png" class="icon" alt=""/>
-                <p>859-468-2839</p>
-              </div>
-            </div>
-  
-            <div class="social-media">
-              <p>CONNECT</p>
-              <div class="social-icons">
-                <!--<a href="#">
-                  <i class="fab fa-facebook-f"></i>
-                </a>-->
-                <a href="https://twitter.com/Pet_Zinger" target="_blank">
-                  <i class="fab fa-twitter"></i>
-                </a>
-                <!--<a href="#">
-                  <i class="fab fa-instagram"></i>
-                </a>-->
-                <a href="https://www.linkedin.com/in/seanpetzinger/" target="_blank">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-  
-          <div class="contact-form">
-            <form action="index.html" autocomplete="off">
-              <h3 class="title">Contact me</h3>
-              <div class="input-container">
-                <input type="text" name="name" class="input" />
-                <label for="">Name</label>
-                <span>Name</span>
-              </div>
-              <div class="input-container">
-                <input type="email" name="email" class="input" />
-                <label for="">Email</label>
-                <span>Email</span>
-              </div>
-              <div class="input-container">
-                <input type="tel" name="phone" class="input" />
-                <label for="">Phone</label>
-                <span>Phone</span>
-              </div>
-              <div class="input-container textarea">
-                <textarea name="message" class="input"></textarea>
-                <label for="">Message</label>
-                <span>Message</span>
-              </div>
-              <input type="submit" value="Send" class="btn" />
-            </form>
-          </div>
+      <form name="contact-form">
+        <div class="form-control">
+          <label>Full Name</label>
+          <input name="name"
+            placeholder="Your Name" />
+          <div class="error hide">Name is required</div>
         </div>
-      </div>    
+  
+        <div class="form-control">
+          <label>Email</label>
+          <input
+            name="email"
+            placeholder="e.g. your_email@example.com"
+          />
+          <div class="error hide">Email is invalid</div>
+        </div>
+  
+        <div class="form-control">
+          <label>Phone</label>
+          <input name="phone"
+          ></input>
+          <div class="error hide">Phone is invalid</div>
+        </div>
+  
+        <div class="form-control">
+          <label>Message</label>
+          <textarea name="message"></textarea>
+          <div class="error hide">Message is required</div>
+        </div>
+  
+        <hr />
+  
+        <button type="submit">SUBMIT FORM</button>
+      </form>-->
+
+      <div class="wrapper">
+      <div class="container">
+        <form action="signup.html" method="post" id="signup">
+          <h1>Contact Me</h1>
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="username" name="name" placeholder="Enter your fullname" />
+            <small></small>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Enter your email address" />
+            <small></small>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <input type="text" id="userMessage" name="userMessage" placeholder="Message" />
+            <small></small>
+          </div>
+          <div class="field">
+            <button type="submit" class="full">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+      <script src="form.js"></script>
+
+      
+      <script src="script.js"></script>
 
     <footer>
         <div>
             <p>&copy; Copyright 2022 Sean Petzinger</p>
         </div>
     </footer>
-    <script src="script.js"></script>
 
 </body>
 
