@@ -20,50 +20,50 @@
 <body>
   <div class="logo2"><a href="/index.html"><img src="/assets/PETZINGER.png"></a>
     <div class="topnav" id="myTopnav">
-        <a href="/index.html" class="active">Home</a>
-        <a href="/graphicdesigner.html">Graphic Designer</a>
-        <a href="/developer.html">Developer</a>
-        <a href="/contact.html">Contact</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i></a>
-    </div>
-</div>
-<div class="main-content">
-  <div class="wrapper">
-    <div class="container">
-      <div>
-        <ul>
-          <li>Sean Petzinger</li>
-          <li>spetzinger926@gmail.com</li>
-          <li>859-468-2839</li>
-        </ul>
-      </div>
-    </div>
-    <div class="container">
-      <form action="contact.html" method="post" id="contact">
-        <h1>Contact Me</h1>
-        <div class="field">
-          <label for="name">Name</label>
-          <input type="text" id="username" name="name" placeholder="Enter your name" />
-          <small></small>
-        </div>
-        <div class="field">
-          <label for="email">Email</label>
-          <input type="text" id="email" name="email" placeholder="Enter your email address" />
-          <small></small>
-        </div>
-        <div class="field">
-          <label for="message">Message</label>
-          <input type="text" id="userMessage" name="userMessage" placeholder="Message" />
-          <small></small>
-        </div>
-        <div class="field">
-          <button type="submit" class="full">Submit</button>
-        </div>
-      </form>
+      <a href="/index.html" class="active">Home</a>
+      <a href="/graphicdesigner.html">Graphic Designer</a>
+      <a href="/developer.html">Developer</a>
+      <a href="/contact.html">Contact</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i></a>
     </div>
   </div>
-</div>
+  <div class="main-content">
+    <div class="wrapper">
+      <div class="container">
+        <div>
+          <ul>
+            <li id="myName"></li>
+            <li id="myEmail"></li>
+            <li id="myPhone"></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <form action="contact.html" method="post" id="contact">
+          <h1>Contact Me</h1>
+          <div class="field">
+            <p id="firstcell"></p>
+            <input type="text" id="username" name="name" placeholder="Enter your name" />
+            <small></small>
+          </div>
+          <div class="field">
+            <p id="secondcell"></p>
+            <input type="text" id="email" name="email" placeholder="Enter your email address" />
+            <small></small>
+          </div>
+          <div class="field">
+            <p id="thirdcell"></p>
+            <input type="text" id="userMessage" name="userMessage" placeholder="Message" />
+            <small></small>
+          </div>
+          <div class="field">
+            <button type="submit" class="full">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
   <script src="form.js"></script>
 
 
