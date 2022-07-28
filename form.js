@@ -1,3 +1,16 @@
+//Navigation//
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+
+
+
+
 // show a message with a type of the input
 function showMessage(input, message, type) {
 	// get the small element and set the message
@@ -39,13 +52,12 @@ function validateEmail(input, requiredMsg, invalidMsg) {
 	return true;
 }
 
-const form = document.querySelector("#signup");
+const form = document.querySelector("#contact");
 
 const NAME_REQUIRED = "Please enter your name";
 const EMAIL_REQUIRED = "Please enter your email";
 const EMAIL_INVALID = "Please enter a correct email address format";
 
-var contact = document.getElementById ("username");
 
 form.addEventListener("submit", function (event) {
 	// stop form submission
@@ -56,6 +68,7 @@ form.addEventListener("submit", function (event) {
 	let emailValid = validateEmail(form.elements["email"], EMAIL_REQUIRED, EMAIL_INVALID);
 	// if valid, submit the form.
 	if (nameValid && emailValid) {
-		alert(`Thank you ${contact} for your interest!`);
+		let username= document.getElementById{{username.nameValid}}
+		alert(`Thank you ${username}! I will get back to you soon!`);
 	}
 });
