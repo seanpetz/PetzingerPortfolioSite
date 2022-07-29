@@ -92,6 +92,7 @@
   display: flex;
   flex: 1;
   flex-flow: row wrap;
+  margin: auto;
 }
 
 .main1 {
@@ -144,6 +145,7 @@ footer {
 .wrapper {
   background-image: url(/assets/hd-wallpaper-2468874.jpg);
   width: 100%;
+  margin: auto;
 }
 
 .container {
@@ -152,7 +154,8 @@ footer {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   max-width: 500px;
-  margin: 20px;
+  min-width: 200px;
+  margin: auto;
   padding: 10px;
 }
 
@@ -161,6 +164,8 @@ footer {
   list-style: none;
   font-size: 14pt;
   line-height: 24pt;
+  text-align: center;
+  font-weight: bold;
 }
 
 form {
