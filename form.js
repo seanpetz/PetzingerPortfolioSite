@@ -1,4 +1,4 @@
-//Navigation//
+// Navigation
 function myFunction() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
@@ -66,9 +66,10 @@ form.addEventListener("submit", function (event) {
     EMAIL_REQUIRED,
     EMAIL_INVALID
   );
+
   // if valid, submit the form.
   if (nameValid && emailValid) {
-    alert(`Thank you! I will get back to you soon!`);
+    alert('Thank you ' + yourName + '! I will get back to you soon!');
   }
 });
 
@@ -81,8 +82,7 @@ document.getElementById("myEmail").innerHTML = myEmail;
 let myPhone = "(859) 468-2839";
 document.getElementById("myPhone").innerHTML = myPhone;
 
-let yourName = "Name";
-document.getElementById("firstcell").innerHTML = yourName;
+let yourName = document.getElementById("firstcell").innerHTML = yourName;
 
 let yourEmail = "Email";
 document.getElementById("secondcell").innerHTML = yourEmail;

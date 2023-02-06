@@ -47,21 +47,24 @@
 /*banner*/
 
 .bannerMain {
-  background: url("/assets/hemispheres.jpg");
+  background: url("/assets/hemispheres.jpg") no-repeat;
   width: 100%;
   background-size: cover;
+  background-position: center;
 }
 
 .bannerDesign {
-  background: url("/assets/rightside.jpg");
+  background: url("/assets/rightside.jpg") no-repeat;
   width: 100%;
   background-size: cover;
+  background-position: left;
 }
 
 .bannerDevelop {
-  background: url("/assets/leftside.jpg");
+  background: url("/assets/leftside.jpg") no-repeat;
   width: 100%;
   background-size: cover;
+  background-position: right;
 }
 
 .banner-text {
